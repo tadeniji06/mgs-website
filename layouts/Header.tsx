@@ -67,10 +67,10 @@ const Header = () => {
 						<Image
 							src={mgs}
 							alt='mgs'
-							width={160}
+							width={120}
 							height={80}
 							priority
-							className='h-17.5 w-auto'
+							// className='h-17.5 w-auto'
 						/>
 					</Link>
 
@@ -90,16 +90,6 @@ const Header = () => {
 
 					{/* Desktop actions */}
 					<div className='hidden md:flex items-center gap-4'>
-						{/* <button
-							aria-label='Search'
-							className='p-2 rounded-lg hover:bg-white/10 transition'
-						>
-							<Icon
-								icon='ic:baseline-search'
-								className='text-white text-xl'
-							/>
-						</button> */}
-
 						<Link
 							href='/'
 							target='_blank'
