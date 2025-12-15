@@ -1,5 +1,5 @@
 import { hero } from "@/assets";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
 						not recognized.{" "}
 					</p>
 
-					<div className='flex gap-8'>
+					{/* <div className='flex gap-8'>
 						<button className='bg-white px-8 py-3 rounded-2xl cursor-pointer'>
 							<Icon
 								icon={"mdi:arrow-left"}
@@ -39,7 +39,7 @@ const Hero = () => {
 								className='text-gray-600 text-2xl'
 							/>
 						</button>
-					</div>
+					</div> */}
 				</div>
 
 				<div className='hidden max-w-sm md:flex'>

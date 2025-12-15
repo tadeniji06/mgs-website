@@ -10,5 +10,21 @@ import cgs from "./cgs.jpg";
 import lst from "./lst.jpg";
 import sa from "./sa.jpg";
 import about from "./about.jpg";
-
-export { logo, hero, who, mgs, f1, f2, f3, atm, cgs, lst, sa, about };
+import ath from "./ath.jpg";
+import frame from './Frame.png'
+export {
+	logo,
+	hero,
+	ath,
+	who,
+	mgs,
+	f1,
+	f2,
+	f3,
+	atm,
+	cgs,
+	lst,
+	sa,
+	about,
+	frame
+};

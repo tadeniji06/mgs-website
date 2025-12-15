@@ -15,4 +15,8 @@ export const headerLinks = [
 		title: "Athletes",
 		link: "/athletes",
 	},
+	{
+		title: "Contact",
+		link: "/contact",
+	},
 ];

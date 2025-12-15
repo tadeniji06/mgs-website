@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
 	title: "MGS Agency",
+	icons: {
+		icon: "/mgs.svg",
+	},
+	keywords: [
+		"Sports Agency",
+		"Athlete Representation",
+		"Sports Management",
+		"Contract Negotiation",
+		"Endorsements",
+		"Sports Marketing",
+		"Talent Scouting",
+		"Professional Athletes",
+		"Sports Industry",
+		"Sports Consulting",
+	],
 	description: "Professional representation for athletes worldwide.",
 };
 

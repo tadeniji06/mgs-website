@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { who } from "@/assets";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 // Explicit typing fixes TS "string is not assignable" variant errors
 const fadeUp: Variants = {
@@ -53,7 +54,9 @@ const WhoWeAre = () => {
 						className='mt-2 flex items-center gap-1 cursor-pointer text-light-blue'
 					>
 						<Icon className='text-2xl' icon='mdi:world' />
-						<p className='tracking-wide'>MORE ABOUT US</p>
+						<Link href={"/about"}>
+							<p className='tracking-wide'>MORE ABOUT US</p>
+						</Link>
 						<Icon className='text-xl' icon='mdi:arrow-right' />
 					</motion.div>
 				</motion.div>
