@@ -11,7 +11,9 @@ import lst from "./lst.jpg";
 import sa from "./sa.jpg";
 import about from "./about.jpg";
 import ath from "./ath.jpg";
-import frame from './Frame.png'
+import frame from "./Frame.png";
+import vv from "./vvv.jpg";
+import user from "./user.jpg";
 export {
 	logo,
 	hero,
@@ -26,5 +28,7 @@ export {
 	lst,
 	sa,
 	about,
-	frame
+	frame,
+	vv,
+	user,
 };

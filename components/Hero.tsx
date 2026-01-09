@@ -1,4 +1,4 @@
-import { hero } from "@/assets";
+import { vv } from "@/assets";
 // import { Icon } from "@iconify/react";
 import Image from "next/image";
 
@@ -6,10 +6,10 @@ const Hero = () => {
 	return (
 		<div className='md:h-175 h-100 w-full relative overflow-hidden'>
 			<Image
-				src={hero}
+				src={vv}
 				alt='hero'
 				fill
-				className='w-full h-full object-cover'
+				className='w-full h-full object-contain'
 				quality={90}
 				style={{ zIndex: -2 }}
 			/>
@@ -42,13 +42,13 @@ const Hero = () => {
 					</div> */}
 				</div>
 
-				<div className='hidden max-w-sm md:flex'>
+				{/* <div className='hidden max-w-sm md:flex'>
 					<p className='text-white font-light text-end'>
 						We provide them with world-class management, personalized
 						career growth strategies, and opportunities that match
 						their true potential.
 					</p>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

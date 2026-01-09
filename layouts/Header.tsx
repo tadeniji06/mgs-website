@@ -67,8 +67,9 @@ const Header = () => {
 						<Image
 							src={mgs}
 							alt='mgs'
-							width={120}
-							height={80}
+							width={150}
+							height={100}
+							className='object-cover h-24 w-[160px]'
 							priority
 							// className='h-17.5 w-auto'
 						/>

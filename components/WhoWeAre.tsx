@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { who } from "@/assets";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
@@ -16,7 +14,7 @@ const fadeUp: Variants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 1.1, // slower so it’s actually perceived
+			duration: 1.1,
 			ease: "easeOut",
 		},
 	},
@@ -77,21 +75,25 @@ const WhoWeAre = () => {
 				</motion.div>
 			</div>
 
-			{/* IMAGE */}
+			{/* VIDEO */}
 			<motion.div
 				initial={{ opacity: 0, scale: 0.96 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 1.3, ease: "easeOut" }}
 				viewport={{ once: true, margin: "-120px" }}
-				className='mt-6'
+				className='mt-8 relative group rounded-2xl overflow-hidden shadow-2xl shadow-primary-blue/20 border border-white/10'
 			>
-				<Image
-					src={who}
-					alt='who'
-					width={1920}
-					height={1080}
-					className='w-full h-full object-cover rounded-xl'
-				/>
+				<div className='absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none' />
+				<video
+					autoPlay
+					muted
+					loop
+					playsInline
+					className='w-full h-full object-cover rounded-2xl transform scale-100 transition-transform duration-700 group-hover:scale-105'
+				>
+					<source src='/mgs.mp4' type='video/mp4' />
+					Your browser does not support the video tag.
+				</video>
 			</motion.div>
 		</section>
 	);
