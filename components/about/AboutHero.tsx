@@ -10,7 +10,7 @@ const AboutHero = () => {
 					support.
 				</p>
 
-				<p className='hidden md:flex text-end max-w-sm text-sm'>
+				<p className='hidden md:flex text-end max-w-sm text-xl font-bold'>
 					We created MGS to change that narrative. Our founders
 					recognized a gap in the market, a need for an agency that
 					truly prioritizes the athlete, champions the underdog, and

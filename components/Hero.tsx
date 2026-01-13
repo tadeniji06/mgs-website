@@ -9,7 +9,7 @@ const Hero = () => {
 				src={vv}
 				alt='hero'
 				fill
-				className='w-full h-full object-contain'
+				className='w-full h-full object-contain md:object-cover'
 				quality={90}
 				style={{ zIndex: -2 }}
 			/>
