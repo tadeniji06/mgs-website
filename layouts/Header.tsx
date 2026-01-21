@@ -58,7 +58,7 @@ const Header = () => {
 	return (
 		<header
 			ref={headerRef}
-			className='sticky top-0 z-50 backdrop-blur-xl bg-dark-nav border-b border-white/20'
+			className='sticky top-0 z-50 backdrop-blur-xl bg-blue-nav border-b border-white/20'
 		>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<nav className='flex items-center justify-between h-24'>
@@ -69,7 +69,7 @@ const Header = () => {
 							alt='mgs'
 							width={150}
 							height={100}
-							className='object-cover h-24 w-[160px]'
+							className='object-cover h-24 w-40'
 							priority
 							// className='h-17.5 w-auto'
 						/>

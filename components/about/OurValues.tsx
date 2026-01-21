@@ -28,9 +28,9 @@ const OurValues = () => {
 
 	return (
 		<section className='bg-linear-to-r from-black via-light-blue/15 to-primary-blue px-6 py-16 text-white md:px-20'>
-			<div className='mx-auto flex max-w-7xl flex-col gap-12 md:flex-row md:gap-20'>
+			<div className='mx-auto flex max-w-7xl flex-col items-start gap-12 md:flex-row md:gap-20'>
 				{/* LEFT */}
-				<div className='flex max-w-xl flex-col gap-6'>
+				<div className='flex max-w-xl flex-col gap-6 sticky top-32'>
 					<p className='text-xs tracking-widest text-white/70'>
 						OUR VALUES
 					</p>

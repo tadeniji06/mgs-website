@@ -36,7 +36,7 @@ const WhoWeAre = () => {
 						Who We Are
 					</h2>
 
-					<p className='mb-4 max-w-lg text-white/80 text-sm md:text-base'>
+					<p className='max-w-lg text-white/80 text-lg'>
 						At MGS Sports Agency, we believe that talent deserves
 						recognition. Too many athletes with exceptional potential
 						remain overlooked and underrepresented.
@@ -67,7 +67,7 @@ const WhoWeAre = () => {
 					viewport={{ once: true, margin: "-100px" }}
 					className='hidden md:flex p-6'
 				>
-					<p className='md:max-w-[320px] text-white/70'>
+					<p className='max-w-lg text-white/70 text-lg'>
 						We offer comprehensive support that goes beyond contracts.
 						We build brands, secure sponsorships, and create lasting
 						partnerships that elevate careers.
@@ -91,7 +91,7 @@ const WhoWeAre = () => {
 					playsInline
 					className='w-full h-full object-cover rounded-2xl transform scale-100 transition-transform duration-700 group-hover:scale-105'
 				>
-					<source src='/mgs.mp4' type='video/mp4' />
+					<source src='/mggs.mp4' type='video/mp4' />
 					Your browser does not support the video tag.
 				</video>
 			</motion.div>

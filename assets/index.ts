@@ -14,9 +14,14 @@ import ath from "./ath.jpg";
 import frame from "./Frame.png";
 import vv from "./vvv.jpg";
 import user from "./user.jpg";
+import aan from "./aan.jpeg";
+import abt from "./abt.jpeg";
+import hh2 from "./hh2.jpg";
+import hh1 from "./hh1.jpeg";
 export {
 	logo,
 	hero,
+	hh1,
 	ath,
 	who,
 	mgs,
@@ -31,4 +36,7 @@ export {
 	frame,
 	vv,
 	user,
+	aan,
+	abt,
+	hh2,
 };

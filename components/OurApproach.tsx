@@ -31,19 +31,19 @@ const OurApproach = () => {
 			image: f3,
 			title: "Dedicated Management",
 			description:
-				"Every athlete gets a personal account manager committed to their success",
+				"Every athlete gets a personal account manager committed to their success. We build a personalized roadmap tailored to your specific career goals, handling everything from contract negotiations to daily logistics so you can focus purely on your game.",
 		},
 		{
 			image: f1,
 			title: "International Network",
 			description:
-				"Global connections with sponsors, clubs, and brands worldwide",
+				"Global connections with sponsors, clubs, and brands worldwide. Our reach extends across major leagues and emerging markets, ensuring you have access to the best opportunities no matter where they arise.",
 		},
 		{
 			image: f2,
 			title: "Professional Support",
 			description:
-				"Expert legal, commercial, and strategic guidance at every step",
+				"Expert legal, commercial, and strategic guidance at every step. From financial planning and brand development to legal protection and post-career transition, we provide a holistic support system.",
 		},
 	];
 
@@ -90,30 +90,31 @@ const OurApproach = () => {
 				initial='hidden'
 				whileInView='show'
 				viewport={{ once: true, margin: "-80px" }}
-				className='mx-auto mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3'
+				className='mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3'
 			>
 				{approachData.map((item, i) => (
 					<motion.div
 						key={i}
 						variants={card}
-						whileHover={{ y: -6 }}
-						transition={{
-							type: "spring",
-							stiffness: 200,
-							damping: 20,
-						}}
-						className='flex flex-col items-center gap-4 rounded-xl border border-gray-200 bg-white p-5 text-center text-black shadow-sm'
+						whileHover={{ y: -8 }}
+						className='flex min-h-[450px] flex-col items-start justify-between rounded-none border border-gray-200 bg-white p-8 text-left text-black shadow-sm transition-all duration-300 hover:shadow-xl'
 					>
-						<Image
-							src={item.image}
-							alt={item.title}
-							className='h-24 w-auto object-contain'
-						/>
+						<div className='mb-6 flex w-full justify-center'>
+							<Image
+								src={item.image}
+								alt={item.title}
+								className='h-40 w-auto object-contain'
+							/>
+						</div>
 
-						<h3 className='text-lg font-semibold'>{item.title}</h3>
-						<p className='text-sm text-gray-600'>
-							{item.description}
-						</p>
+						<div className='flex flex-col gap-3'>
+							<h3 className='text-2xl font-medium leading-tight'>
+								{item.title}
+							</h3>
+							<p className='text-sm leading-relaxed text-gray-600'>
+								{item.description}
+							</p>
+						</div>
 					</motion.div>
 				))}
 			</motion.div>
