@@ -20,6 +20,12 @@ const team: TeamMember[] = [
 		image: user,
 	},
 	{
+		name: "Femilee Olawuyi",
+		role: "Commercial Executive",
+		tagline: "NIL",
+		image: user,
+	},
+	{
 		name: "Alex Matvienko",
 		role: "Non-Executive Director",
 		tagline: "NIL",
