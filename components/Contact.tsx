@@ -27,7 +27,7 @@ const Contact = () => {
 	const handleChange = (
 		e: ChangeEvent<
 			HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-		>
+		>,
 	) => {
 		setFormData({
 			...formData,
@@ -183,7 +183,7 @@ const Contact = () => {
 							<p className='text-sm leading-relaxed text-gray-400'>
 								We typically respond to new enquiries within{" "}
 								<strong>24–48 hours</strong>. Urgent partnership
-								requests are prioritized.
+								requests are prioritised.
 							</p>
 						</div>
 					</motion.div>

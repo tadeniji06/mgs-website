@@ -1,14 +1,13 @@
 "use client";
-import { vv, hh2, hh1 } from "@/assets";
+import { vv, hh2, hh1, hr1, hr2 } from "@/assets";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
-	{ id: 1, image: vv, alt: "Hero Image 1" },
-	{ id: 2, image: hh1, alt: "Hero Image 2" },
-	{ id: 3, image: hh2, alt: "Hero Image 3" },
+	{ id: 1, image: hr1, alt: "Hero Image 1" },
+	{ id: 2, image: hr2, alt: "Hero Image 2" },
 ];
 
 const Hero = () => {
@@ -69,7 +68,7 @@ const Hero = () => {
 					>
 						Helping <span className='text-light-blue'>athletes</span>{" "}
 						around the world, advocating for those who are skilled but
-						not recognized.
+						not recognised.
 					</motion.p>
 
 					{/* Navigation Controls */}

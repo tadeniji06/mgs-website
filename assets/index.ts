@@ -18,6 +18,14 @@ import aan from "./aan.jpeg";
 import abt from "./abt.jpeg";
 import hh2 from "./hh2.jpg";
 import hh1 from "./hh1.jpeg";
+import ar1 from './ar1.jpeg';
+import ar2 from './ar3.jpeg';
+import ar3 from './ar2.jpeg';
+import ar4 from './ar4.jpeg';
+import ar5 from './ar5.jpeg';
+
+import hr1 from './hr1.jpeg';
+import hr2 from './hr2.jpeg';
 export {
 	logo,
 	hero,
@@ -38,5 +46,12 @@ export {
 	user,
 	aan,
 	abt,
+	ar1,
+	ar2,
+	ar3,
+	ar4,
+	ar5,
 	hh2,
+	hr1,
+	hr2,
 };

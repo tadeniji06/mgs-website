@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const Ready = () => {
 	return (
-		<div className='mx-auto my-12 flex max-w-5xl flex-col items-center justify-center gap-4 rounded-xl border-4 border-light-blue bg-dark-blue p-6 text-white shadow-lg md:gap-6 md:border-8 md:p-10'>
+		<div className='mx-auto my-12 flex max-w-5xl flex-col items-center justify-center gap-4 rounded-xl border-4 border-[#00d4ff] bg-[#055d6e] p-6 text-white shadow-lg md:gap-6 md:border-8 md:p-10'>
 			<h1 className='text-center text-2xl font-bold tracking-tight md:text-4xl'>
 				Ready to Elevate Your Career?
 			</h1>
@@ -10,9 +12,12 @@ const Ready = () => {
 				that truly understands representation, let’s talk.
 			</p>
 
-			<button className='mt-2 cursor-pointer rounded-2xl bg-linear-to-r from-light-blue to-primary-blue px-10 py-4 text-sm font-semibold tracking-wide transition-transform duration-300 hover:scale-105 md:px-14 md:py-5 md:text-base'>
+			<Link
+				href='/contact'
+				className='mt-2 cursor-pointer rounded-2xl bg-linear-to-r from-[#00d4ff] to-[#052026] px-10 py-4 text-sm font-semibold tracking-wide transition-transform duration-300 hover:scale-105 md:px-14 md:py-5 md:text-base'
+			>
 				GET IN TOUCH
-			</button>
+			</Link>
 		</div>
 	);
 };

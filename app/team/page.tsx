@@ -4,6 +4,7 @@ import { user } from "@/assets";
 import Ready from "@/components/Ready";
 import Image, { StaticImageData } from "next/image";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 interface TeamMember {
 	name: string;
@@ -56,19 +57,22 @@ const TeamPage = () => {
 				<div className='mx-auto flex max-w-7xl flex-col items-start gap-12 md:flex-row md:gap-24'>
 					{/* LEFT - Sticky Content */}
 					<div className='flex max-w-sm flex-col gap-6 md:sticky md:top-32'>
-						<p className='text-xs font-semibold tracking-widest text-light-blue uppercase'>
-							OUR TEAM
-						</p>
-
-						<h1 className='text-3xl font-medium leading-tight md:text-4xl lg:text-5xl'>
-							Meet the dedicated professionals fighting for athlete
-							success worldwide
+						<h1 className='text-5xl font-black tracking-tighter text-white md:text-7xl lg:text-8xl'>
+							OUR <br /> <span className='text-light-blue'>TEAM</span>
 						</h1>
 
-						<button className='group mt-4 flex w-fit items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all hover:bg-gray-200'>
+						<p className='text-lg font-light leading-relaxed text-gray-300 md:text-xl'>
+							Meet the dedicated professionals fighting for athlete
+							success worldwide
+						</p>
+
+						<Link
+							href='/contact'
+							className='group mt-4 flex w-fit items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all hover:bg-gray-200'
+						>
 							Get in touch with Us
 							<MoveRight className='h-4 w-4 transition-transform group-hover:translate-x-1' />
-						</button>
+						</Link>
 					</div>
 
 					{/* RIGHT - Scrollable List */}

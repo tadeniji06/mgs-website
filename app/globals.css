@@ -2,11 +2,17 @@
 @import "tailwindcss";
 
 @theme {
-	--color-primary-blue: #052026;
-	--color-light-blue: #00d4ff;
+	--color-sage: #c9cbba; /* new-color-two */
+	--color-light-gray: #f2f2f2; /* new-color-one */
+	--color-gray: #d9d9d9; /* new-color-three */
+	--color-dark-gray: #bfbfbf; /* new-color-four */
+
+	/* Mapping to existing vars to create a "sage/gray" theme */
+	--color-primary-blue: #052026; /* Keeping for dark/contrast, but we might want to change this */
+	--color-light-blue: #c9cbba; /* Replacing the bright blue with sage */
 	--color-dark-nav: #222222;
-	--color-dark-blue: #055d6e;
-	--color-blue-nav: #1c7789;
+	--color-dark-blue: #bfbfbf;
+	--color-blue-nav: #787878;
 }
 
 body {

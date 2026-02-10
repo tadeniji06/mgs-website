@@ -3,8 +3,9 @@
 import { motion, type Variants } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
+import { who } from "@/assets";
 
-// Explicit typing fixes TS "string is not assignable" variant errors
 const fadeUp: Variants = {
 	hidden: {
 		opacity: 0,
@@ -22,79 +23,80 @@ const fadeUp: Variants = {
 
 const WhoWeAre = () => {
 	return (
-		<section className='text-white p-5 bg-linear-to-r from-black via-light-blue/15 to-primary-blue px-2 md:px-20 md:min-h-screen overflow-hidden'>
-			<div className='flex flex-col md:flex-row justify-between gap-8'>
+		<section className='relative overflow-hidden bg-black px-6 py-20 text-white md:px-20 lg:py-32'>
+			{/* Decorative background element */}
+			<div className='absolute -left-20 top-20 h-96 w-96 rounded-full bg-light-blue/10 blur-[100px] pointer-events-none' />
+
+			<div className='mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center'>
 				{/* LEFT CONTENT */}
 				<motion.div
 					variants={fadeUp}
 					initial='hidden'
 					whileInView='show'
 					viewport={{ once: true, margin: "-100px" }}
-					className='p-6'
+					className='flex flex-col gap-8'
 				>
-					<h2 className='text-3xl md:text-4xl font-bold mb-4'>
-						Who We Are
-					</h2>
+					<div>
+						<h2 className='mb-6 text-4xl font-bold uppercase tracking-wide md:text-5xl lg:text-6xl text-white'>
+							Who We{" "}
+							<span className='text-transparent bg-clip-text bg-linear-to-r from-light-blue to-white'>
+								Are
+							</span>
+						</h2>
+						<div className='h-1 w-20 bg-light-blue rounded-full mb-6' />
+					</div>
 
-					<p className='max-w-lg text-white/80 text-lg'>
-						At MGS Sports Agency, we believe that talent deserves
-						recognition. Too many athletes with exceptional potential
-						remain overlooked and underrepresented.
-					</p>
+					<div className='space-y-6 text-lg text-gray-300 leading-relaxed'>
+						<p>
+							At MGS Sports Agency, we believe that talent deserves
+							recognition. Too many athletes with exceptional
+							potential remain overlooked and underrepresented.
+						</p>
+						<p>
+							We offer comprehensive support that goes beyond
+							contracts. We build brands, secure sponsorships, and
+							create lasting partnerships that elevate careers.
+						</p>
+					</div>
 
 					<motion.div
-						whileHover={{ x: 8 }}
-						transition={{
-							type: "spring",
-							stiffness: 120,
-							damping: 14,
-						}}
-						className='mt-2 flex items-center gap-1 cursor-pointer text-light-blue'
+						whileHover={{ x: 10 }}
+						className='mt-4 flex w-fit items-center gap-2 text-light-blue transition-colors hover:text-white'
 					>
-						<Icon className='text-2xl' icon='mdi:world' />
-						<Link href={"/about"}>
-							<p className='tracking-wide'>MORE ABOUT US</p>
+						<Link
+							href={"/about"}
+							className='flex items-center gap-2 group'
+						>
+							<span className='text-sm font-bold tracking-widest uppercase border-b border-transparent group-hover:border-white transition-all'>
+								More About Us
+							</span>
+							<Icon
+								className='text-2xl transition-transform group-hover:translate-x-1'
+								icon='mdi:arrow-right'
+							/>
 						</Link>
-						<Icon className='text-xl' icon='mdi:arrow-right' />
 					</motion.div>
 				</motion.div>
 
-				{/* RIGHT TEXT */}
+				{/* RIGHT IMAGE */}
 				<motion.div
-					variants={fadeUp}
-					initial='hidden'
-					whileInView='show'
-					viewport={{ once: true, margin: "-100px" }}
-					className='hidden md:flex p-6'
+					initial={{ opacity: 0, scale: 0.95 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.8, delay: 0.2 }}
+					viewport={{ once: true }}
+					className='relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-white/5'
 				>
-					<p className='max-w-lg text-white/70 text-lg'>
-						We offer comprehensive support that goes beyond contracts.
-						We build brands, secure sponsorships, and create lasting
-						partnerships that elevate careers.
-					</p>
+					<Image
+						src={who}
+						alt='Athlete represenation'
+						fill
+						className='object-cover transition-transform duration-700 hover:scale-105'
+						sizes='(max-width: 768px) 100vw, 50vw'
+					/>
+					{/* Overlay gradient */}
+					<div className='absolute inset-0 bg-linear-to-t from-black/60 to-transparent' />
 				</motion.div>
 			</div>
-
-			{/* VIDEO */}
-			<motion.div
-				initial={{ opacity: 0, scale: 0.96 }}
-				whileInView={{ opacity: 1, scale: 1 }}
-				transition={{ duration: 1.3, ease: "easeOut" }}
-				viewport={{ once: true, margin: "-120px" }}
-				className='mt-8 relative group rounded-2xl overflow-hidden shadow-2xl shadow-primary-blue/20 border border-white/10'
-			>
-				<div className='absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500 z-10 pointer-events-none' />
-				<video
-					autoPlay
-					muted
-					loop
-					playsInline
-					className='w-full h-full object-cover rounded-2xl transform scale-100 transition-transform duration-700 group-hover:scale-105'
-				>
-					<source src='/mggs.mp4' type='video/mp4' />
-					Your browser does not support the video tag.
-				</video>
-			</motion.div>
 		</section>
 	);
 };
