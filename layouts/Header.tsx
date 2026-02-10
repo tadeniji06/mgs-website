@@ -92,8 +92,7 @@ const Header = () => {
 					{/* Desktop actions */}
 					<div className='hidden md:flex items-center gap-4'>
 						<Link
-							href='/'
-							target='_blank'
+							href='/contact'
 							className='bg-light-blue text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-white/90 hover:text-dark-nav transition'
 						>
 							Get In Touch
@@ -142,8 +141,7 @@ const Header = () => {
 							</button>
 
 							<Link
-								href='/'
-								target='_blank'
+								href='/contact'
 								onClick={closeMobileMenu}
 								className='flex-1 text-center bg-light-blue text-white py-3 rounded-lg text-sm font-medium'
 							>
