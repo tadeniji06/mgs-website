@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
-import { who } from "@/assets";
+import { fa3 } from "@/assets";
 
 const fadeUp: Variants = {
 	hidden: {
@@ -84,10 +84,10 @@ const WhoWeAre = () => {
 					whileInView={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
 					viewport={{ once: true }}
-					className='relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-white/5'
+					className='relative aspect-4/3 w-full overflow-hidden rounded-2xl bg-white/5'
 				>
 					<Image
-						src={who}
+						src={fa3}
 						alt='Athlete represenation'
 						fill
 						className='object-cover transition-transform duration-700 hover:scale-105'

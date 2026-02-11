@@ -1,12 +1,12 @@
 "use client";
-import { vv, hh2, hh1, hr1, hr2 } from "@/assets";
+import { vv, hh2, hh1, hr1, hr2, yy1 } from "@/assets";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
-	{ id: 1, image: hr1, alt: "Hero Image 1" },
+	{ id: 1, image: yy1, alt: "Hero Image 1" },
 	{ id: 2, image: hr2, alt: "Hero Image 2" },
 ];
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutHero = () => {
 	return (
-		<section className='relative flex min-h-[70vh] flex-col justify-center overflow-hidden bg-black px-6 py-24 text-white md:px-20'>
+		<section className='relative flex min-h-[70vh] flex-col justify-center overflow-hidden bg-black px-6 py-24 text-white md:px-20 bg-linear-to-b from-primary-blue to-light-blue/20'>
 			{/* Background Ambient Glows */}
 			<div className='pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] -translate-y-1/2 translate-x-1/2 rounded-full bg-primary-blue/20 blur-[120px]' />
 			<div className='pointer-events-none absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/2 translate-y-1/2 rounded-full bg-light-blue/10 blur-[120px]' />
