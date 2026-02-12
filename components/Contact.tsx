@@ -125,48 +125,67 @@ const Contact = () => {
 							<div className='space-y-8'>
 								{/* Email */}
 								<div className='flex items-start gap-4'>
-									<div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-light-blue/20 to-primary-blue/20 text-light-blue ring-1 ring-white/10'>
+									<div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-light-blue ring-1 ring-white/10'>
 										<Mail className='h-5 w-5' />
 									</div>
 									<div className='pt-1'>
-										<h3 className='mb-1 font-semibold text-white'>
+										<h3 className='mb-3 font-semibold text-white'>
 											Email
 										</h3>
-										<p className='text-gray-400 font-light hover:text-light-blue transition-colors'>
-											support@jmpssport.ng
-										</p>
+										<div className='space-y-2'>
+											<div>
+												<p className='text-xs text-gray-400 uppercase tracking-wider font-semibold'>
+													Sponsorship
+												</p>
+												<a
+													href='mailto:sponsorship@mgsglobal.co.uk'
+													className='text-gray-300 font-light hover:text-light-blue transition-colors'
+												>
+													sponsorship@mgsglobal.co.uk
+												</a>
+											</div>
+											<div>
+												<p className='text-xs text-gray-400 uppercase tracking-wider font-semibold'>
+													Management
+												</p>
+												<a
+													href='mailto:management@mgsglobal.co.uk'
+													className='text-gray-300 font-light hover:text-light-blue transition-colors'
+												>
+													management@mgsglobal.co.uk
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 
 								{/* Phone */}
 								<div className='flex items-start gap-4'>
-									<div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-light-blue/20 to-primary-blue/20 text-light-blue ring-1 ring-white/10'>
+									<div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/5 text-light-blue ring-1 ring-white/10'>
 										<Phone className='h-5 w-5' />
 									</div>
 									<div className='pt-1'>
-										<h3 className='mb-1 font-semibold text-white'>
+										<h3 className='mb-3 font-semibold text-white'>
 											Phone
 										</h3>
-										<p className='text-gray-400 font-light'>
-											001 001 4805
-										</p>
-									</div>
-								</div>
-
-								{/* Location */}
-								<div className='flex items-start gap-4'>
-									<div className='flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-light-blue/20 to-primary-blue/20 text-light-blue ring-1 ring-white/10'>
-										<MapPin className='h-5 w-5' />
-									</div>
-									<div className='pt-1'>
-										<h3 className='mb-1 font-semibold text-white'>
-											Office
-										</h3>
-										<p className='text-gray-400 font-light leading-relaxed'>
-											124, Allen Avenue, Ikeja,
-											<br />
-											Lagos State, Nigeria
-										</p>
+										<div className='space-y-4'>
+											<div>
+												<p className='text-xs text-gray-400 uppercase tracking-wider font-semibold'>
+													UK / European Office
+												</p>
+												<p className='text-gray-300 font-light'>
+													+44 7824 538871
+												</p>
+											</div>
+											<div>
+												<p className='text-xs text-gray-400 uppercase tracking-wider font-semibold'>
+													African Office
+												</p>
+												<p className='text-gray-300 font-light'>
+													+234 817 676 4864
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

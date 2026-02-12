@@ -9,7 +9,8 @@ import Link from "next/link";
 interface TeamMember {
 	name: string;
 	role: string;
-	tagline?: string;
+	qualifications?: string;
+	email?: string;
 	image: StaticImageData;
 }
 
@@ -17,31 +18,26 @@ const team: TeamMember[] = [
 	{
 		name: "Myles Grant-Smith",
 		role: "Managing Director",
-		tagline: "NIL",
+		qualifications: "BSc (Hons) Sport Coaching and Development",
+		email: "myles@mgsglobal.co.uk",
+		image: user,
+	},
+	{
+		name: "Busuyi Ogunduyile",
+		role: "Head of Athlete Relations",
+		email: "busuyi@mgsglobal.co.uk",
 		image: user,
 	},
 	{
 		name: "Femilee Olawuyi",
 		role: "Commercial Executive",
-		tagline: "NIL",
-		image: user,
-	},
-	{
-		name: "Alex Matvienko",
-		role: "Non-Executive Director",
-		tagline: "NIL",
-		image: user,
-	},
-	{
-		name: "Busuyi Ogunduyile",
-		role: "Head of West African Athlete Relations",
-		tagline: "NIL",
+		email: "femilee@mgsglobal.co.uk",
 		image: user,
 	},
 	{
 		name: "Alex Bailey",
 		role: "Legal Consultant",
-		tagline: "Masters of Law, Oxford University",
+		qualifications: "Masters of Law, Oxford University",
 		image: user,
 	},
 ];
@@ -61,14 +57,9 @@ const TeamPage = () => {
 							OUR <br /> <span className='text-light-blue'>TEAM</span>
 						</h1>
 
-						<p className='text-lg font-light leading-relaxed text-gray-300 md:text-xl'>
-							Meet the dedicated professionals fighting for athlete
-							success worldwide
-						</p>
-
 						<Link
 							href='/contact'
-							className='group mt-4 flex w-fit items-center gap-2 rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition-all hover:bg-gray-200'
+							className='group mt-4 flex w-fit items-center gap-2 rounded-full bg-light-blue px-8 py-4 text-sm font-bold text-black transition-all hover:bg-white'
 						>
 							Get in touch with Us
 							<MoveRight className='h-4 w-4 transition-transform group-hover:translate-x-1' />
@@ -88,35 +79,39 @@ const TeamPage = () => {
 										className='object-cover transition-transform duration-700 group-hover:scale-105'
 										sizes='(max-width: 768px) 100vw, 50vw'
 									/>
-									{/* Overlay Gradient (optional, for aesthetics) */}
-									<div className='absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+									{/* Overlay Gradient */}
+									<div className='absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
 								</div>
 
 								{/* Info */}
-								<div className='grid grid-cols-[auto_1fr] gap-x-8 gap-y-2 text-sm md:text-base'>
-									{/* Name Row */}
-									<span className='font-semibold text-gray-400'>
-										NAME:
-									</span>
-									<span className='font-bold tracking-wide text-white uppercase'>
-										{member.name}
-									</span>
+								<div className='grid grid-cols-[1fr] gap-4 text-sm md:text-base'>
+									<div>
+										<h3 className='text-2xl font-bold tracking-wide text-white uppercase md:text-3xl'>
+											{member.name}
+										</h3>
+										<p className='text-light-blue font-semibold uppercase tracking-wider mt-1'>
+											{member.role}
+										</p>
+									</div>
 
-									{/* Role Row */}
-									<span className='font-semibold text-gray-400'>
-										ROLE:
-									</span>
-									<span className='font-bold tracking-wide text-white uppercase'>
-										{member.role}
-									</span>
+									<div className='space-y-1 text-gray-300'>
+										{member.qualifications && (
+											<p className='font-light italic'>
+												{member.qualifications}
+											</p>
+										)}
+										{member.email && (
+											<a
+												href={`mailto:${member.email}`}
+												className='block text-white hover:text-light-blue transition-colors underline decoration-light-blue/50 underline-offset-4'
+											>
+												{member.email}
+											</a>
+										)}
+									</div>
 								</div>
 							</div>
 						))}
-
-						{/* Bottom CTA Element if needed */}
-						<div className='mt-10'>
-							<Ready />
-						</div>
 					</div>
 				</div>
 			</section>

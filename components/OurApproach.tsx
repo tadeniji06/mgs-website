@@ -26,31 +26,31 @@ const OurApproach = () => {
 	const approachData = [
 		{
 			icon: "mdi:account-tie",
-			title: "Dedicated Management",
+			title: "Dedicated Account Management",
 			description:
-				"Every athlete gets a personal account manager committed to their success. We build a personalised roadmap tailored to your specific career goals, handling everything from contract negotiations to daily logistics so you can focus purely on your game.",
-			color: "#00d4ff", // Sage
+				"Every athlete gets a personal account manager committed to their success.",
+			color: "#D9CBBA", // Gold/Beige
 		},
 		{
 			icon: "mdi:earth",
 			title: "International Network",
 			description:
-				"Global connections with sponsors, clubs, and brands worldwide. Our reach extends across major leagues and emerging markets, ensuring you have access to the best opportunities no matter where they arise.",
-			color: "#00d4ff", // Original Cyan (pop)
+				"All successful athletes will be given the opportunity to take their success locally to globally. We have access to organisations and sponsorship opportunities all over the world.",
+			color: "#D9CBBA", // Light Gray
 		},
 		{
-			icon: "mdi:handshake",
-			title: "Professional Support",
+			icon: "mdi:school",
+			title: "Expert Advice",
 			description:
-				"Expert legal, commercial, and strategic guidance at every step. From financial planning and brand development to legal protection and post-career transition, we provide a holistic support system.",
-			color: "#00d4ff", // Light Gray (White-ish)
+				"Each member of our team is an industry expert and leader in their respective fields. Brand development, legal advice, career support. We provide a holistic support system.",
+			color: "#D9CBBA", // Dark Gray
 		},
 		{
-			icon: "mdi:currency-usd",
-			title: "Sponsorship Acquisition",
+			icon: "mdi:hand-coin",
+			title: "Sponsorship Support",
 			description:
-				"We identify and secure sponsorship opportunities tailored to your career stage and goals. Whether it's a major brand or a smaller, emerging sponsor, we ensure you have the financial support needed to thrive.",
-			color: "#00d4ff", // Dark Gray/Silver
+				"Every athlete is assigned a dedicated account manager who actively secures new sponsorship opportunities tailored specifically to them.",
+			color: "#D9CBBA", // Gold/Beige
 		},
 	];
 
@@ -69,7 +69,7 @@ const OurApproach = () => {
 						viewport={{ once: true }}
 						className='text-3xl font-bold md:text-5xl uppercase tracking-wider text-sage'
 					>
-						OUR APPROACH
+						OUR WINNING FORMULA
 					</motion.h1>
 
 					<motion.p

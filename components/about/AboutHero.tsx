@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 
 const AboutHero = () => {
 	return (
-		<section className='relative flex min-h-[70vh] flex-col justify-center overflow-hidden bg-black px-6 py-24 text-white md:px-20 bg-linear-to-b from-primary-blue to-light-blue/20'>
-			{/* Background Ambient Glows */}
-			<div className='pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] -translate-y-1/2 translate-x-1/2 rounded-full bg-primary-blue/20 blur-[120px]' />
-			<div className='pointer-events-none absolute bottom-0 left-0 h-[500px] w-[500px] -translate-x-1/2 translate-y-1/2 rounded-full bg-light-blue/10 blur-[120px]' />
+		<section className='relative flex min-h-[70vh] flex-col justify-center overflow-hidden bg-black px-6 py-24 text-white md:px-20'>
+			{/* Background Ambient Glows - No Blue, more Gold/Neutral */}
+			<div className='pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] -translate-y-1/2 translate-x-1/2 rounded-full bg-sage/10 blur-[120px]' />
 
 			<div className='relative z-10 mx-auto w-full max-w-7xl'>
 				<motion.div
@@ -17,13 +16,13 @@ const AboutHero = () => {
 					transition={{ duration: 0.8, ease: "easeOut" }}
 					className='mb-20 flex flex-col items-center text-center'
 				>
-					<span className='mb-6 inline-block border-b border-light-blue/30 pb-2 text-sm font-bold tracking-[0.3em] text-light-blue uppercase md:text-base'>
-						About MGS
+					<span className='mb-6 inline-block border-b border-sage/30 pb-2 text-sm font-bold tracking-[0.3em] text-sage uppercase md:text-base'>
+						Our Story
 					</span>
 					<h1 className='text-4xl font-black leading-[1.1] tracking-tighter text-white md:text-6xl lg:text-7xl'>
-						MORE THAN <br className='hidden md:block' />{" "}
+						BEHIND THE <br className='hidden md:block' />{" "}
 						<span className='text-transparent bg-clip-text bg-linear-to-b from-white to-gray-400'>
-							AN AGENCY.
+							SCENES.
 						</span>
 					</h1>
 				</motion.div>
@@ -37,22 +36,26 @@ const AboutHero = () => {
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.8, delay: 0.2 }}
-						className='flex flex-col justify-center'
+						className='flex flex-col justify-center gap-6'
 					>
+						<h2 className='text-2xl font-bold text-sage md:text-3xl'>
+							MGS started by being present.
+						</h2>
 						<p className='text-lg leading-relaxed text-gray-200 md:text-xl'>
-							We&apos;re advocates for athletes who deserve{" "}
-							<span className='text-white font-medium'>
-								more recognition
-							</span>
-							,{" "}
-							<span className='text-white font-medium'>
-								more opportunities
-							</span>
-							, and{" "}
-							<span className='text-white font-medium'>
-								more support
-							</span>
-							.
+							Our Managing Director, Myles Grant-Smith, spent years
+							attending events, competitions, and training
+							environments — talking to athletes, not pitching them.
+						</p>
+						<p className='text-lg leading-relaxed text-gray-200 md:text-xl'>
+							And the same conversations kept happening.
+							<br />
+							Talented athletes were asking for help. Not attention —
+							support.
+						</p>
+						<p className='text-lg leading-relaxed text-gray-200 md:text-xl'>
+							They were under-appreciated, stretched financially,
+							unsure about contracts, and trying to chase elite
+							performance without the right people around them.
 						</p>
 					</motion.div>
 
@@ -61,15 +64,23 @@ const AboutHero = () => {
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.8, delay: 0.4 }}
-						className='flex items-center text-lg leading-relaxed text-gray-200 md:text-xl'
+						className='flex flex-col justify-center gap-6 text-lg leading-relaxed text-gray-200 md:text-xl'
 					>
 						<p>
-							We created MGS to change that narrative. Our founders
-							recognised a gap in the market, a need for an agency
-							that truly prioritises the athlete, champions the
-							underdog, and fights relentlessly for opportunities that
-							others might overlook.
+							Most weren’t lacking ability.
+							<br />
+							They were lacking a network.
 						</p>
+						<p className='font-semibold text-white'>
+							MGS exists to fill that gap.
+						</p>
+
+						<div className='mt-8 border-l-4 border-sage pl-6 py-4 bg-white/5 rounded-r-2xl'>
+							<p className='text-xl italic text-sage md:text-2xl font-medium'>
+								&quot;If you’re good enough to pursue your dream,
+								you’re good enough to be supported properly.&quot;
+							</p>
+						</div>
 					</motion.div>
 				</div>
 			</div>

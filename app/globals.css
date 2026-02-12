@@ -1,26 +1,33 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
  */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import "tailwindcss";
 
 @theme {
-	--color-sage: #c9cbba; /* new-color-two */
-	--color-light-gray: #f2f2f2; /* new-color-one */
-	--color-gray: #d9d9d9; /* new-color-three */
-	--color-dark-gray: #bfbfbf; /* new-color-four */
+	--color-sage: #d9cbba; /* Assuming correction from DC9CBBA to D9CBBA (Beige/Gold) */
+	--color-light-gray: #f2f2f2;
+	--color-gray: #d9d9d9;
+	--color-dark-gray: #bfbfbf;
 
-	/* Mapping to existing vars to create a "sage/gray" theme */
-	--color-primary-blue: #052026; /* Keeping for dark/contrast, but we might want to change this */
-	--color-light-blue: #c9cbba; /* Replacing the bright blue with sage */
-	--color-dark-nav: #222222;
-	--color-dark-blue: #bfbfbf;
-	--color-blue-nav: #787878;
+	/* Mapping legacy blue vars to new "No Blue" grayscale/gold theme */
+	--color-primary-blue: #121212; /* Dark background replacement */
+	--color-light-blue: #d9cbba; /* Accent replacement (Gold/Beige) */
+	--color-dark-nav: #000000;
+	--color-dark-blue: #2a2a2a; /* Secondary dark */
+	--color-blue-nav: #808080;
 }
+
+/* 
+f2f2f2
+dc9cbba
+d9d9d9
+bfbfbf
+*/
 
 body {
 	/* font-family: "Federant", serif; */
-	 font-family: "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
 	/* font-weight: 400;
 	font-style: normal; */
 	background-color: black;
