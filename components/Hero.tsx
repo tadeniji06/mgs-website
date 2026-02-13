@@ -66,9 +66,8 @@ const Hero = () => {
 						transition={{ duration: 0.8, delay: 0.3 }}
 						className='text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl'
 					>
-						Helping <span className='text-light-blue'>athletes</span>{" "}
-						around the world, advocating for those who are skilled but
-						not recognised.
+						An <span className='text-light-blue'>agency</span>{" "}
+						for the under-appreciated, the under-utilized and the underdog.
 					</motion.p>
 
 					{/* Navigation Controls */}

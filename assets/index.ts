@@ -23,12 +23,13 @@ import ar2 from "./ar3.jpeg";
 import ar3 from "./ar2.jpeg";
 import ar4 from "./ar4.jpeg";
 import ar5 from "./ar5.jpeg";
+import niu from "./niu.png";
 
 import hr1 from "./hr1.jpeg";
 import hr2 from "./hr2.jpeg";
 import nnl from "./nnl.jpeg";
 import fa3 from "./fa3.jpeg";
-import yy1 from './yy1.jpeg';
+import yy1 from "./yy1.jpeg";
 export {
 	logo,
 	hero,
@@ -60,4 +61,5 @@ export {
 	hr2,
 	nnl,
 	yy1,
+	niu,
 };

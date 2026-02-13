@@ -29,32 +29,25 @@ const WhoWeAre = () => {
 
 			<div className='mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center'>
 				{/* LEFT CONTENT */}
-				{/* LEFT CONTENT */}
 				<motion.div
 					variants={fadeUp}
 					initial='hidden'
 					whileInView='show'
 					viewport={{ once: true, margin: "-100px" }}
-					className='flex flex-col gap-8'
+					className='flex flex-col gap-6 items-start text-left'
 				>
 					<div>
-						<h2 className='mb-6 text-3xl font-bold uppercase tracking-wide md:text-4xl lg:text-5xl text-white'>
-							An agency for the{" "}
-							<span className='text-light-blue'>
-								under-appreciated
-							</span>
-							, the{" "}
-							<span className='text-light-blue'>under-utilised</span>{" "}
-							and the{" "}
-							<span className='text-light-blue'>underdog</span>
+						<h2 className='mb-6 text-3xl font-bold uppercase tracking-wide md:text-4xl lg:text-5xl text-white leading-tight'>
+							HELPING{" "}
+							<span className='text-light-blue'>ATHLETES</span> AROUND{" "}
+							<span className='text-light-blue'>THE WORLD</span>
 						</h2>
 						<div className='h-1 w-20 bg-light-blue rounded-full mb-6' />
 					</div>
 
-					<div className='space-y-6 text-lg text-gray-300 leading-relaxed'>
+					<div className='space-y-6 text-xl text-gray-300 leading-relaxed max-w-xl font-medium'>
 						<p>
-							Our agency can provide a clear path of progression and
-							global opportunities.
+							Advocating for those who are skilled but not recognized.
 						</p>
 					</div>
 
@@ -87,7 +80,7 @@ const WhoWeAre = () => {
 				>
 					<Image
 						src={fa3}
-						alt='Athlete represenation'
+						alt='Athlete representation'
 						fill
 						className='object-cover transition-transform duration-700 hover:scale-105'
 						sizes='(max-width: 768px) 100vw, 50vw'

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "@iconify/react";
-import { logo } from "@/assets";
+import { niu } from "@/assets";
 import { headerLinks } from "@/utils/data";
 
 // Explicit typing for header links
@@ -65,11 +65,11 @@ const Header = () => {
 					{/* Logo */}
 					<Link href='/' className='shrink-0'>
 						<Image
-							src={logo}
-							alt='logo'
+							src={niu}
+							alt='niu'
 							width={150}
 							height={100}
-							className='object-cover h-24 w-40'
+							className='object-contain h-34 w-40'
 							priority
 							// className='h-17.5 w-auto'
 						/>
