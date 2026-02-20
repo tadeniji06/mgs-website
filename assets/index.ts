@@ -30,10 +30,17 @@ import hr2 from "./hr2.jpeg";
 import nnl from "./nnl.jpeg";
 import fa3 from "./fa3.jpeg";
 import yy1 from "./yy1.jpeg";
+
+import myles from "./team/myles.jpeg";
+import femi from "./team/femi.jpeg";
+import busuyi from "./team/busuyi.jpeg";
 export {
 	logo,
 	hero,
 	hh1,
+	myles,
+	femi,
+	busuyi,
 	ath,
 	who,
 	mgs,

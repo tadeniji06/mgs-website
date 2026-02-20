@@ -1,7 +1,6 @@
 "use client";
 
-import { user } from "@/assets";
-import Ready from "@/components/Ready";
+import { busuyi, femi, myles, user } from "@/assets";
 import Image, { StaticImageData } from "next/image";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
@@ -20,19 +19,19 @@ const team: TeamMember[] = [
 		role: "Managing Director",
 		qualifications: "BSc (Hons) Sport Coaching and Development",
 		email: "myles@mgsglobal.co.uk",
-		image: user,
+		image: myles,
 	},
 	{
 		name: "Busuyi Ogunduyile",
 		role: "Head of Athlete Relations",
 		email: "busuyi@mgsglobal.co.uk",
-		image: user,
+		image: busuyi,
 	},
 	{
 		name: "Femilee Olawuyi",
 		role: "Commercial Executive",
 		email: "femilee@mgsglobal.co.uk",
-		image: user,
+		image: femi,
 	},
 	{
 		name: "Alex Bailey",
@@ -71,11 +70,11 @@ const TeamPage = () => {
 						{team.map((member, idx) => (
 							<div key={idx} className='group flex flex-col gap-6'>
 								{/* Image Container */}
-								<div className='relative aspect-[4/3] w-full overflow-hidden rounded-sm bg-white/5'>
+								<div className='relative aspect-4/3 w-full overflow-hidden rounded-sm bg-white/5'>
 									<Image
 										src={member.image}
 										alt={member.name}
-										fill
+										// fill
 										className='object-cover transition-transform duration-700 group-hover:scale-105'
 										sizes='(max-width: 768px) 100vw, 50vw'
 									/>
