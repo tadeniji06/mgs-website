@@ -24,12 +24,14 @@ const team: TeamMember[] = [
 	{
 		name: "Busuyi Ogunduyile",
 		role: "Head of Athlete Relations",
+		qualifications: "Licensed NBBOC manager",
 		email: "busuyi@mgsglobal.co.uk",
 		image: busuyi,
 	},
 	{
 		name: "Femilee Olawuyi",
 		role: "Commercial Executive",
+		qualifications: "Licensed NBBOC manager",
 		email: "femilee@mgsglobal.co.uk",
 		image: femi,
 	},
